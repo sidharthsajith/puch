@@ -3,7 +3,7 @@
 ## Demo
 
 [▶️ Download/View Demo Video](https://github.com/sidharthsajith/puch/blob/main/assets/Screen%20Recording%202025-07-11%20at%209.44.11%E2%80%AFAM.mov?raw=true)
-
+[![Demo Video](https://img.youtube.com/vi/<video-id>/0.jpg)](https://github.com/sidharthsajith/puch/blob/main/assets/Screen%20Recording%202025-07-11%20at%209.44.11%E2%80%AFAM.mov)
 ---
 
 A web-based tool for technical judging of hackathon code submissions. Judges can analyze public GitHub repos for code quality, completeness, efficiency, error handling, version control, technology use, and more. Participants can view full feedback and scores for their own or other teams' submissions.
