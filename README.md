@@ -1,5 +1,13 @@
 # Hackathon Repository Evaluator
 
+## Demo
+
+https://github.com/sidharthsajith/puch/raw/main/assets/Screen%20Recording%202025-07-11%20at%209.44.11%E2%80%AFAM.mov
+
+https://user-images.githubusercontent.com/your-username/your-repo/main/assets/Screen%20Recording%202025-07-11%20at%209.44.11%E2%80%AFAM.mov
+
+---
+
 A web-based tool for technical judging of hackathon code submissions. Judges can analyze public GitHub repos for code quality, completeness, efficiency, error handling, version control, technology use, and more. Participants can view full feedback and scores for their own or other teams' submissions.
 
 ---
