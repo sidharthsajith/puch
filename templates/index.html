@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repo Evaluator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <h1 class="mb-4">Hackathon Repository Evaluator</h1>
+    <form class="card p-4 mb-5" method="post" action="{{ url_for('analyze') }}">
+        <div class="mb-3">
+            <label for="repo_url" class="form-label">GitHub Repository URL</label>
+            <input type="url" class="form-control" id="repo_url" name="repo_url" placeholder="https://github.com/user/repo" required />
+        </div>
+        <div class="mb-3">
+            <label for="problem_statement" class="form-label">Problem Statement (optional)</label>
+            <textarea class="form-control" id="problem_statement" name="problem_statement" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Analyze</button>
+    </form>
+
+    <h2 class="h4 mb-3">Recent Analyses</h2>
+    {% if analyses %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Repository</th>
+                <th scope="col">Overall Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in analyses %}
+            <tr>
+                <td>{{ row['timestamp'] | int | datetimeformat }}</td>
+                <td><a href="{{ url_for('view_analysis', analysis_id=row['id']) }}">{{ row['repo_url'] }}</a></td>
+                <td>{{ row['overall_score'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>No analyses yet.</p>
+    {% endif %}
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
