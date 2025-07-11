@@ -2,9 +2,7 @@
 
 ## Demo
 
-https://github.com/sidharthsajith/puch/raw/main/assets/Screen%20Recording%202025-07-11%20at%209.44.11%E2%80%AFAM.mov
-
-https://user-images.githubusercontent.com/sidharthsajith/puch/main/assets/Screen%20Recording%202025-07-11%20at%209.44.11%E2%80%AFAM.mov
+[▶️ Download/View Demo Video](https://github.com/sidharthsajith/puch/blob/main/assets/Screen%20Recording%202025-07-11%20at%209.44.11%E2%80%AFAM.mov?raw=true)
 
 ---
 
